@@ -6,7 +6,7 @@ export default {
 
 	kit: {
 		adapter: adapter({
-			runtime: 'nodejs20.x'     // ← এই লাইনটা যোগ করো
+			runtime: 'nodejs18.x'     // ← এই লাইনটা যোগ করো
 		})
 	}
 };
