@@ -1,9 +1,12 @@
 import adapter from '@sveltejs/adapter-vercel';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-const config = {
+export default {
+	preprocess: vitePreprocess(),
+
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			runtime: 'nodejs20.x'     // ← এই লাইনটা যোগ করো
+		})
 	}
 };
-
-export default config;
