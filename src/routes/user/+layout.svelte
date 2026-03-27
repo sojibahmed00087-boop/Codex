@@ -4,8 +4,6 @@
 	export let data;
 	$: ({ user } = data);
 </script>
-<slot />
-
 <div class="container">
 	<div class="banner">
 		<div class="banner-gradient" />
