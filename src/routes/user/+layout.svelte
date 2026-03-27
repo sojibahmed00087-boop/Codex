@@ -4,6 +4,7 @@
 	export let data;
 	$: ({ user } = data);
 </script>
+<slot />
 
 <div class="container">
 	<div class="banner">
