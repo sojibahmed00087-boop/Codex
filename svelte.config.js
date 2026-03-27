@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from "@sveltejs/adapter-vercel": "^6.3.3";
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
@@ -6,7 +6,7 @@ export default {
 
 	kit: {
 		adapter: adapter({
-			runtime: 'nodejs18.x'     // ← এই লাইনটা যোগ করো
+			runtime: 'nodejs20.x'     // 18.x এর পরিবর্তে 20.x রাখো
 		})
 	}
 };
